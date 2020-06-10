@@ -9,7 +9,7 @@ load("methy.classifier.RData")
 file.remove("methy.classifier.RData")
 
 # Description of the function methy.classifier()
-# This function predicts the entity/subtype of a tumor sample based on reduced CpG set published in Duran-Ferrer, M, 2019.
+# This function predicts the entity/subtype of a tumor sample based on reduced CpG set published in Duran-Ferrer, M, 2020.
 
 # Output
 # List of tables (one for each predictor) with the estimated probabilities of the classes, and
