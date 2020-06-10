@@ -2,6 +2,7 @@
 ## B-cell tumor classifier example
 ##
 
+# B-cell tumor classifier, last updated 10/06/2020.
 
 # download a file with the classifier, load it in R, and delete the file
 download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/methy.classifier.RData", destfile = "methy.classifier.RData", method="libcurl")
