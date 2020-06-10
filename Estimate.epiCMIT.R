@@ -11,13 +11,15 @@ file.remove("methy.classifier.RData")
 # Description of the function Estimate.epiCMIT()
 # This function calculates the epiCMIT, epiCMIT-hyper and epiCMIT-hypo in B-cell tumors as published in Duran-Ferrer, M, 2020.
 
-# Output
-# A data.frame with epiCMIT,epiCMIT-hyper and epiCMIT-hypo in all the samples
-
-
+#INPUT
 # Function arguments
 #betas: DNA methylation matrix of samples to calculate the epiCMIT. CpGs on rows, samples on columns. Rownames of matrix should be names of CpGs. See betas.example.
 #epiCMIT.annot: Annotation necessary for calculation of epiCMIT. epiCMIT have been built with 450K aray data.
 #export: Whether to export or not results in the current directory. Default to FALSE
 
+
+# OUTPUT
+# A data.frame with epiCMIT,epiCMIT-hyper and epiCMIT-hypo in all the samples. If export=T, export an .xlsx file in yout current directory with epiCMIT results.
+
+# Example execution:
 Estimate.epiCMIT(betas = betas.example,epiCMIT.annot = epiCMIT.annot,export = T)
