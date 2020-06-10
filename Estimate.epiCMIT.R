@@ -2,6 +2,7 @@
 ## epiCMIT calculation example
 ##
 
+#version 2, last updated 10/06/2020
 
 # download a file necessary data load it in R, and delete the file
 download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/epiCMIT.example.RData", destfile = "methy.classifier.RData", method="libcurl")
