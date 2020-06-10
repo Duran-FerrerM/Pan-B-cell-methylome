@@ -9,7 +9,7 @@ load("methy.classifier.RData")
 file.remove("methy.classifier.RData")
 
 # Description of the function Estimate.epiCMIT()
-# This function calculates the epiCMIT, epiCMIT-hyper and epiCMIT-hypo in B-cell tumors as published in Duran-Ferrer, M, 2019.
+# This function calculates the epiCMIT, epiCMIT-hyper and epiCMIT-hypo in B-cell tumors as published in Duran-Ferrer, M, 2020.
 
 # Output
 # A data.frame with epiCMIT,epiCMIT-hyper and epiCMIT-hypo in all the samples
