@@ -5,9 +5,9 @@
 # B-cell tumor classifier v.2, last updated 10/06/2020.
 
 # download a file with the classifier, load it in R, and delete the file
-download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/B.cell.tumor.classifier.v2.RData", destfile = "methy.classifier.RData", method="libcurl")
-load("methy.classifier.RData")
-file.remove("methy.classifier.RData")
+download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/B.cell.tumor.classifier.v2.RData", destfile = "B.cell.tumor.classifier.v2.RData", method="libcurl")
+load("B.cell.tumor.classifier.v2.RData")
+file.remove("B.cell.tumor.classifier.v2.RData")
 
 # Description of the function methy.classifier()
 # This function predicts the entity/subtype of a tumor sample based on reduced CpG set published in Duran-Ferrer, M, 2020.
