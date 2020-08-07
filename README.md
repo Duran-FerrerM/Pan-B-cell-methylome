@@ -12,11 +12,11 @@ For further details, please check the original manuscript: https://www.biorxiv.o
 ## Code availability
 #### Pan B cell tumor diagnostic algorithm:
 Current version: v.1.0.
-Please, refer to the original script for all details regarding its execution at: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/B.cell.tumor.classifier.v2.R
+Please, refer to the original script for all details regarding its execution at: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/B.cell.tumor.classifier.R
 
 #### epiCMIT calculator: 
 Current version: v.1.0.
-Please, refer to the original script for all details regarding its execution at: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Estimate.epiCMIT.v2.R
+Please, refer to the original script for all details regarding its execution at: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Estimate.epiCMIT.R
 
 ## Data availability
 All the normalized DNA methylation matreices used for the sutdy can be found here: http://resources.idibaps.org/paper/the-proliferative-history-shapes-the-dna-methylome-of-b-cell-tumors-and-predicts-clinical-outcome
