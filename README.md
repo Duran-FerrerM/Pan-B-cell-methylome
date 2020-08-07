@@ -6,7 +6,7 @@ We report a systematic analysis of the DNA methylation variability in 1,595 samp
 For further details, please check the origianl manuscript: https://www.biorxiv.org/content/10.1101/2020.02.06.937383v3
 
 ## Graphical summary
-![alt text](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Graphical.abstract.pdf)
+![alt text](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Graphical.abstract.png)
 
 
 ## Code availability
