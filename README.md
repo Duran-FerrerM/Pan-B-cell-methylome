@@ -12,6 +12,12 @@ For further details, please check the original manuscript: https://www.biorxiv.o
 ## Code availability
 #### Pan B cell tumor diagnostic algorithm:
 Current version: v.1.0.  
+```
+#Example execution:
+methy.classifier(data=example)
+methy.classifier(data=example,which.predictor="MCL",export=TRUE)
+methy.classifier(data=example,which.predictor="entity.subtype",export=TRUE)
+```
 Please, refer to the original script for all details regarding its execution at: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/B.cell.tumor.classifier.R  
 Here you can find additional details on how the classifier was built: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/predictor.code.R
 
