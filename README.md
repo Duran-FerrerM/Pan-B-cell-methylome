@@ -17,7 +17,11 @@ Here you can find additional details on how the classifier was built: https://gi
 
 #### epiCMIT calculator: 
 Current version: v.1.0.  
-Please, refer to the original script for all details regarding its execution at: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Estimate.epiCMIT.R
+```
+# Example execution:
+Estimate.epiCMIT(betas = betas.example,epiCMIT.annot = epiCMIT.annot,export = T)
+```
+Please, refer to the original script for further details regarding its execution at: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Estimate.epiCMIT.R
 
 ## Data availability
 All the normalized DNA methylation matreices used for the sutdy can be found here: http://resources.idibaps.org/paper/the-proliferative-history-shapes-the-dna-methylome-of-b-cell-tumors-and-predicts-clinical-outcome
