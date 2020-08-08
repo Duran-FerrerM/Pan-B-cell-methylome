@@ -15,7 +15,7 @@ The epiCMIT (epigenetically-determined Cumulative MIToses) mitotic clock represe
 Current version: v.1.0.  
 The R source file can be found here: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Estimate.epiCMIT.R  
 
-#### Code…
+#### Code:
 ```
 ##
 ## epiCMIT calculation example
