@@ -10,10 +10,11 @@ For further details, please check the original manuscript: https://www.biorxiv.o
 
 
 ## Code availability
-#### Pan B cell tumor diagnostic algorithm:
+### Pan B cell tumor diagnostic algorithm:
 Current version: v.1.0.  
 Source code can be found here: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/B.cell.tumor.classifier.R  
 Here you can find additional details on how the classifier was built: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/predictor.code.R  
+####Code
 ```
 ##
 ## B-cell tumor classifier example
@@ -50,10 +51,11 @@ methy.classifier(data=example,which.predictor="MCL",export=TRUE)
 methy.classifier(data=example,which.predictor="entity.subtype",export=TRUE)
 ```
 
-#### epiCMIT calculator: 
+### epiCMIT calculator: 
 Current version: v.1.0.  
 Source code can be found here: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Estimate.epiCMIT.R
 
+####Code
 ```
 ##
 ## epiCMIT calculation example
