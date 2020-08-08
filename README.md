@@ -15,7 +15,7 @@ The epiCMIT (epigenetically-determined Cumulative MIToses) mitotic clock represe
 As a final note, the proliferative history of B-cell tumors include the proliferative history of normal B-cell development and the proliferative history of malignant transformation and progression. The epiCMIT should be compared then among B-cell tumors with the same cellular origin.
     
 Current version: v.1.0.  
-The R source file can be found here: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Estimate.epiCMIT.R  
+The source R file can be found here: https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Estimate.epiCMIT.R  
 
 #### Code:
 ```
