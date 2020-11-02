@@ -7,7 +7,7 @@ We report a systematic analysis of the DNA methylation variability in 1,595 samp
 ![alt text](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Graphical.abstract.png)
 
 ## Citation
-If you use any data or code derived from this study, please cite:
+If you use any data or code derived from this study, please cite:<br />
 Duran-Ferrer, M., Clot, G., Nadeu, F. et al. The proliferative history shapes the DNA methylome of B-cell tumors and predicts clinical outcome. Nat Cancer (2020). https://doi.org/10.1038/s43018-020-00131-2
 
 
