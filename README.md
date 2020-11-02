@@ -6,6 +6,10 @@ We report a systematic analysis of the DNA methylation variability in 1,595 samp
 ## Graphical summary
 ![alt text](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Graphical.abstract.png)
 
+## Citation
+If you use any data or code derived from this study, please cite:
+Duran-Ferrer, M., Clot, G., Nadeu, F. et al. The proliferative history shapes the DNA methylome of B-cell tumors and predicts clinical outcome. Nat Cancer (2020). https://doi.org/10.1038/s43018-020-00131-2
+
 
 ## Code availability
 
@@ -94,8 +98,6 @@ methy.classifier(data=example,which.predictor="entity.subtype",export=TRUE)
 
 ## Data availability
 DNA methylation and gene expression data that support the findings of this study have been deposited at the European Genome-phenome Archive (EGA) under accession number EGAS00001004640. Previously published DNA methylation data re-analyzed in this study can be found under accession codes: B cells, EGAS00001001196; ALL, GSE16368, GSE47051, GSE7658515, GSE6922916; MCL, EGAS00001001637, EGAS00001004165; CLL, EGAD00010000871, EGAD00010000948; MM, EGAS00001000841; In vitro B-cell differentiation model of naïve B cells from human primary samples, GSE72498. Normalized DNA methylation matrices used for all the analyses in this study are available at: http://resources.idibaps.org/paper/the-proliferative-history-shapes-the-DNA-methylome-of-B-cell-tumors-and-predicts-clinical-outcome. Published gene expression datasets can be found under the accession codes: B cells, EGAS00001001197; ALL, GSE47051; MCL, GSE36000; CLL, EGAS00000000092, EGAD00010000254; MM, GSE19784; In vitro B-cell differentiation model of naïve B cells from human primary samples, GSE72498. ChIP-seq datasets that were re-analyzed here can be found under the accession codes: GSE109377 (NALM6 ALL cell line, n=1) and EGAS00001000326 (15 normal B cells donors, and 5 MCL, 7 CLL and 4 MM patients) available from Blueprint https://www.blueprint-epigenome.eu/.
-## Citation
-If you use any data or code derived from this study, please cite: https://www.nature.com/articles/s43018-020-00131-2
 
 ## Contact
 If you have any question, comment or suggestions please contact me at: *maduran@clinic.cat* :-)
