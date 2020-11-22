@@ -99,6 +99,9 @@ methy.classifier(data=example,which.predictor="MCL",export=TRUE)
 methy.classifier(data=example,which.predictor="entity.subtype",export=TRUE)
 ```
 
+## LICENSE
+LICENSE terms can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/LICENSE)
+
 ## Data availability
 DNA methylation and gene expression data that support the findings of this study have been deposited at the European Genome-phenome Archive (EGA) under accession number [EGAS00001004640](https://ega-archive.org/studies/EGAS00001004640). <br />
 
@@ -108,9 +111,6 @@ Normalized DNA methylation matrices used for all the analyses in this study are 
 
 Published gene expression datasets can be found under the accession codes: B cells, [EGAS00001001197](https://www.ebi.ac.uk/ega/studies/EGAS00001001197); ALL, [GSE49032](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE49032); MCL, [GSE36000](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE36000); CLL, [EGAS00000000092](https://www.ebi.ac.uk/ega/studies/EGAS00000000092), [EGAD00010000252](https://www.ebi.ac.uk/ega/datasets/EGAD00010000252); MM, [GSE19784](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE19784); In vitro B-cell differentiation model of naïve B cells from human primary samples, [GSE72498](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE72498).<br />
 ChIP-seq datasets that were re-analyzed here can be found under the accession codes: [GSE109377](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE109377) (NALM6 ALL cell line, n=1) and [EGAS00001000326](https://www.ebi.ac.uk/ega/studies/EGAS00001000326) (15 normal B cells donors, and 5 MCL, 7 CLL and 4 MM patients) available from [Blueprint](https://www.blueprint-epigenome.eu/).
-
-##LICENSE
-LICENSE terms can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/LICENSE)
 
 ## Contact
 If you have any question, comment or suggestions please contact me at: *maduran@clinic.cat* :-)
