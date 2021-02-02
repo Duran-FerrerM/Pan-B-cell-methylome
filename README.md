@@ -13,10 +13,13 @@ The pdf of the article can be found [here](https://www.nature.com/articles/s4301
 A News and Views comment about the manuscript can be found [here](https://www.nature.com/articles/s43018-020-00132-1)<br />
 The pdf of the News and Views can be found [here](https://www.nature.com/articles/s43018-020-00132-1.epdf?sharing_token=ZqP9SX5G5ogq_Bh7cCEXwtRgN0jAjWel9jnR3ZoTv0NrOjZYLsw1KXBqPK-N3X_Ynrp74QwNHbmSKxLNPl7qEPpFo5ObHfqVCo2ifG6GFqRQcK2VKMPKSMw-f3wUEqD-sMhURNlS5n73EUJjY4pQ2qPc2MAlHTNFpQI-1KPZix0%3D)
 
+## LICENSE
+LICENSE terms can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/LICENSE)
 
 ## Code availability
 
-### epiCMIT mitotic clock calculator
+### epiCMIT mitotic clock calculator 
+####(Illumina 450k and EPIC arrays currently supported. Next-generation sequencing-based epiCMIT will be provided soon...)
 The epiCMIT (epigenetically-determined Cumulative MIToses) mitotic clock represents a relative measure of the total proliferative history of normal and neoplastic B cells. It is build considering the highest score from their two underlying hyper- and hypomethylation-based mitotic clocks, called epiCMIT-hyper and the epiCMIT-hypo, respectively. The code we provide here calculates the three mitotic clocks for each sample. All of them range from 0 to 1, depending on low or high realtive proliferative history. Based on our data, considering hyper- or hypomethyaltion separately may not be sufficient to capture the entire mitotic history of cancer cells. We performed a comprehensive selection of CpGs to buid the epiCMIT and showed it as an accurate mitotic clock for normal and neoplastic B cells. Nonetheless, given our careful CpG filtering we strongly belive that epiCMIT represent a pan-cancer mitotic clock.  
   
 As a final note, the proliferative history of B-cell tumors include the proliferative history of normal B-cell development and the proliferative history of malignant transformation and progression. The epiCMIT should be compared then among B-cell tumors with the same cellular origin.
@@ -98,9 +101,6 @@ methy.classifier(data=example)
 methy.classifier(data=example,which.predictor="MCL",export=TRUE)
 methy.classifier(data=example,which.predictor="entity.subtype",export=TRUE)
 ```
-
-## LICENSE
-LICENSE terms can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/LICENSE)
 
 ## Data availability
 DNA methylation and gene expression data that support the findings of this study have been deposited at the European Genome-phenome Archive (EGA) under accession number [EGAS00001004640](https://ega-archive.org/studies/EGAS00001004640). <br />
