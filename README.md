@@ -9,7 +9,7 @@ We report a systematic analysis of the DNA methylation variability in 1,595 samp
 ## Citation
 If you use any data or code derived from this study, please cite:<br />
 Duran-Ferrer, M., Clot, G., Nadeu, F. et al. The proliferative history shapes the DNA methylome of B-cell tumors and predicts clinical outcome. Nat Cancer (2020). https://doi.org/10.1038/s43018-020-00131-2. The pdf of the article can be found [here](https://www.nature.com/articles/s43018-020-00131-2.epdf?sharing_token=XRuBq8qwGeJcZf6SuE08pdRgN0jAjWel9jnR3ZoTv0Mh5o7ypQ2fGNatxzZC0VSATkPfrfQL1kKKlFISzIABgfdmJeGPofsBj1UFSVxn5ru5tgRQoqXwF63VqsH5u33nJ-Zp1gzOEZNuXb-F6VcxSAiniSABihzhc5dJ9z5PP1M%3D) <br />
-Please, find also a [comment](https://www.nature.com/articles/s43018-020-00132-1) of our manuscipt by Paola Strati and Michael R. Geen. The pdf can be found [here](https://www.nature.com/articles/s43018-020-00132-1.epdf?sharing_token=ZqP9SX5G5ogq_Bh7cCEXwtRgN0jAjWel9jnR3ZoTv0NrOjZYLsw1KXBqPK-N3X_Ynrp74QwNHbmSKxLNPl7qEPpFo5ObHfqVCo2ifG6GFqRQcK2VKMPKSMw-f3wUEqD-sMhURNlS5n73EUJjY4pQ2qPc2MAlHTNFpQI-1KPZix0%3D)
+Please, also check the [comment](https://www.nature.com/articles/s43018-020-00132-1) of our manuscipt by Paola Strati and Michael R. Geen.
 
 ## LICENSE
 LICENSE terms can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/LICENSE)
