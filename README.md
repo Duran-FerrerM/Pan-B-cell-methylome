@@ -54,7 +54,8 @@ Estimate.epiCMIT(betas = betas.example,epiCMIT.annot = epiCMIT.annot,export = T)
 ```
 
 ### Pan B-cell tumor classifier algorithm
-B-cell tumors comprise a variety of neoplasias derived from normal B cells of the heamopoietic system. Collectively, ALL, MCL, CLL, DLBCL and MM represent the majority of diagnosed B-cell neoplasias. They are further classified in subtypes with different clinicobiological features. The code we provide here represents a Pan B-cell tumor classifier algorithm, which contains two steps: in the firt step, an unknown sample is classified into one of the five major B-cell tumor entities; in the second step, these major entities are further classified into their subtypes. If prior knowledge of the entity is avaialble, we recommend to specify it to the classifier algorithm.
+#### The CpGs of the classifier are present in both Illumina 450k and EPIC arrays, and thus both platforms are supported.
+B-cell tumors comprise a variety of neoplasias derived from normal B cells of the heamopoietic system. Collectively, ALL, MCL, CLL, DLBCL and MM represent the majority of diagnosed B-cell neoplasias. They are further classified in subtypes with different clinicobiological features. The code we provide here represents a Pan B-cell tumor classifier algorithm, which contains two steps: in the firt step, an unknown sample is classified into one of the five major B-cell tumor entities; in the second step, these major entities are further classified into their subtypes. Although an unbiased prediction can serve as an internal control, if trusty knowledge of the entity is avaialble, we recommend to specify it to the classifier algorithm.
 
 Current version: v.1.0.  
 The source R file can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/B.cell.tumor.classifier.R)  
