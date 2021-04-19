@@ -1,8 +1,16 @@
+##
+## epiCMIT version v.2. Illumina 450k, EPIC and NGS supported.
+##
+
+# last update 19/04/2021
+
 
 options(stringsAsFactors = F,error=NULL)
 ##needed packages
 library(GenomicRanges)
 library(data.table)
+
+
 
 ## Although not mandatory, minimum knowledge of R and GenomicRanges package is expected to run these lines. Please, contact me if you need help! ;-)
 
@@ -11,7 +19,7 @@ download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/
 load("Estimate.epiCMIT.RData")
 
 ##
-## Working functions to calculate the epiCMIT ( last updated 19/04/2021)
+## Working functions to calculate the epiCMIT 
 ##
 
 
