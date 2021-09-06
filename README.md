@@ -18,7 +18,7 @@ LICENSE terms can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-me
 ## Code availability
 
 ### epiCMIT mitotic clock calculator
-#### NOTE: Please, make sure you have the latest R version and R packages (R≥4.1.1 and GenomicRanges≥1.44.0) to run the following code. 
+### NOTE: Please, make sure you have the latest R version and R packages (R≥4.1.1 and GenomicRanges≥1.44.0) to run the following code. 
 #### Illumina arrays (450k and EPIC) and NGS (RRBS, ERRBS and WGBS) are currently supported.
 The epiCMIT (epigenetically-determined Cumulative MIToses) mitotic clock represents a relative measure of the total proliferative history of normal and neoplastic B cells. It is built considering the highest score from their two underlying hyper- and hypomethylation-based mitotic clocks, called epiCMIT-hyper and the epiCMIT-hypo, respectively. The code we provide here calculates the three mitotic clocks for each sample. All of them range from 0 to 1, depending on low or high realtive proliferative history. Based on the data analyzed in the manuscipt, considering hyper- or hypomethyaltion separately may not be sufficient to capture the entire mitotic history of cancer cells. We performed a comprehensive selection of CpGs to buid the epiCMIT and showed it as an accurate mitotic clock for normal and neoplastic B cells. Nonetheless, given our careful CpG filtering we strongly belive that epiCMIT represent a pan-cancer mitotic clock. As a final note, the proliferative history of B-cell tumors include the proliferative history of normal B-cell development and the proliferative history of malignant transformation and progression. The epiCMIT should be compared then among B-cell tumors with the same cellular origin.
     
