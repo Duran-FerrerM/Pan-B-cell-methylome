@@ -5,7 +5,7 @@ We report a systematic analysis of the DNA methylation variability in 1,595 samp
 Here, we provide the diagnostic algorithm and the epiCMIT mitotic clock calculator.
 
 ## Graphical summary
-![alt text](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Graphical.abstract.png)
+![alt text](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Images/Graphical.abstract.png)
 
 ## Citation
 If you use any data or code derived from this study, please cite:<br />
@@ -24,7 +24,7 @@ LICENSE terms can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-me
 The epiCMIT (epigenetically-determined Cumulative MIToses) mitotic clock represents a relative measure of the total proliferative history of normal and neoplastic B cells. It is built considering the highest score from their two underlying hyper- and hypomethylation-based mitotic clocks, called epiCMIT-hyper and the epiCMIT-hypo, respectively. The code we provide here calculates the three mitotic clocks for each sample. All of them range from 0 to 1, depending on low or high realtive proliferative history. Based on the data analyzed in the manuscipt, considering hyper- or hypomethyaltion separately may not be sufficient to capture the entire mitotic history of cancer cells. We performed a comprehensive selection of CpGs to buid the epiCMIT and showed it as an accurate mitotic clock for normal and neoplastic B cells. Nonetheless, given our careful CpG filtering we strongly belive that epiCMIT represent a pan-cancer mitotic clock. As a final note, the proliferative history of B-cell tumors include the proliferative history of normal B-cell development and the proliferative history of malignant transformation and progression. The epiCMIT should be compared then among B-cell tumors with the same cellular origin.
     
 Current version: v.2.0.  
-The source R file can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Estimate.epiCMIT.R)
+The source R file can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Code/Estimate.epiCMIT.R)
 
 #### Code:
 ```
@@ -44,7 +44,7 @@ library(data.table)
 ## Although not mandatory, minimum knowledge of R and GenomicRanges package is expected to run these lines. Please, contact me if you need help! ;-)
 
 ##load necessary info
-download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/Estimate.epiCMIT.RData", destfile = "Estimate.epiCMIT.RData", method="libcurl")
+download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/Data/Estimate.epiCMIT.RData", destfile = "Estimate.epiCMIT.RData", method="libcurl")
 load("Estimate.epiCMIT.RData")
 
 ##
@@ -142,8 +142,8 @@ fwrite(epiCMIT.RRBS.scores,"epiCMIT.RRBS.scores.tsv",sep="\t")
 B-cell tumors comprise a variety of neoplasias derived from normal B cells of the heamopoietic system. Collectively, ALL, MCL, CLL, DLBCL and MM represent the majority of diagnosed B-cell neoplasias. They are further classified in subtypes with different clinicobiological features. The code we provide here represents a Pan B-cell tumor classifier algorithm, which contains two steps: in the firt step, an unknown sample is classified into one of the five major B-cell tumor entities previously mentioned; in the second step, these major entities are further classified into their subtypes: ALL subtypes, HeH; 11q23/MLL; t(12;21); t(1;19); t(9;22); dic(9;20). MCL subtypes, C1/cMCL and C2/nnMCL. CLL subtypes, n-CLL/low programmed CLL, i-CLL/intermediate programmed CLL and m-CLL/high programmed CLL and  DLBCL subtypes, ABC and GCB. Although an unbiased prediction can serve as an internal control, if trusty knowledge of the entity is avaialble, we recommend to specify it to the classifier algorithm.
 
 Current version: v.2.0.  
-The source R file can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/B.cell.tumor.classifier.R)  
-Additional details on how the classifier was built can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/predictor.code.R)  
+The source R file can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Code/B.cell.tumor.classifier.R)  
+Additional details on how the classifier was built can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/Code/predictor.code.R)  
 
 #### Code:
 
@@ -162,7 +162,7 @@ options(max.print = 10000,stringsAsFactors = F,error=NULL)
 ##
 
 # download a file with the classifier, load it in R, and delete the file
-download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/B.cell.tumor.classifier.RData", destfile = "B.cell.tumor.classifier.RData", method="libcurl")
+download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/Data/B.cell.tumor.classifier.RData", destfile = "B.cell.tumor.classifier.RData", method="libcurl")
 load("B.cell.tumor.classifier.RData")
 
 
