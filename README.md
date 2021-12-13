@@ -10,11 +10,7 @@ Here, we provide the diagnostic algorithm and the epiCMIT mitotic clock calculat
 ## Citation
 If you use any data or code derived from this study, please cite:<br />
 Duran-Ferrer, M. et al. The proliferative history shapes the DNA methylome of B-cell tumors and predicts clinical outcome. Nat Cancer (2020). https://doi.org/10.1038/s43018-020-00131-2. <br />
-
 The pdf of the article can be found [here](https://www.nature.com/articles/s43018-020-00131-2.epdf?sharing_token=XRuBq8qwGeJcZf6SuE08pdRgN0jAjWel9jnR3ZoTv0Mh5o7ypQ2fGNatxzZC0VSATkPfrfQL1kKKlFISzIABgfdmJeGPofsBj1UFSVxn5ru5tgRQoqXwF63VqsH5u33nJ-Zp1gzOEZNuXb-F6VcxSAiniSABihzhc5dJ9z5PP1M%3D). <br />
-
-Duran-Ferrer, M et al. The proliferative history shapes the DNA methylome of B-cell tumors and predicts clinical outcome. Nat Cancer (2020). https://doi.org/10.1038/s43018-020-00131-2. The pdf of the article can be found [here](https://www.nature.com/articles/s43018-020-00131-2.epdf?sharing_token=XRuBq8qwGeJcZf6SuE08pdRgN0jAjWel9jnR3ZoTv0Mh5o7ypQ2fGNatxzZC0VSATkPfrfQL1kKKlFISzIABgfdmJeGPofsBj1UFSVxn5ru5tgRQoqXwF63VqsH5u33nJ-Zp1gzOEZNuXb-F6VcxSAiniSABihzhc5dJ9z5PP1M%3D). <br />
-
 Please, also check the [comment](https://www.nature.com/articles/s43018-020-00132-1) of our manuscipt by Paolo Strati and Michael R. Green.
 
 ## LICENSE
