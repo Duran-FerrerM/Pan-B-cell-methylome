@@ -18,10 +18,10 @@ LICENSE terms can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-me
 
 ##  epiCMIT mitotic clock calculator
 
-A complete tutorial to estimate the epiCMIT mitotic clock score in DNA methylation data can be found [here](Code/Estimate.epiCMIT.html)
+A complete tutorial to estimate the epiCMIT mitotic clock score in DNA methylation data can be found ![here](Code/Estimate.epiCMIT.html)
 
 ## Pan B-cell tumor classifier algorithm
-A complete tutorial to estimate cellular composition of your DNA methylation data in Illumina arrays as well as to predict the main B-cell tumor entities ans subtypes can be found [here](Code/B.cell.tumor.classifier.html)
+A complete tutorial to estimate cellular composition of your DNA methylation data in Illumina arrays as well as to predict the main B-cell tumor entities ans subtypes can be found ![here](Code/B.cell.tumor.classifier.html)
 
 ## Data availability
 DNA methylation and gene expression data that support the findings of this study have been deposited at the European Genome-phenome Archive (EGA) under accession number [EGAS00001004640](https://ega-archive.org/studies/EGAS00001004640). <br />
