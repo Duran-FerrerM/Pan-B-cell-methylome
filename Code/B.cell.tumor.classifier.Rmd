@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 B-cell tumors comprise a variety of neoplasias derived from normal B cells of the heamopoietic system. Collectively, ALL, MCL, CLL, DLBCL and MM represent the majority of diagnosed B-cell neoplasias. They are further classified in subtypes with different clinicobiological features. The code we provide here represents a Pan B-cell tumor classifier algorithm, which contains two steps: in the firt step, an unknown sample is classified into one of the five major B-cell tumor entities previously mentioned; in the second step, these major entities are further classified into their subtypes: ALL subtypes, HeH; 11q23/MLL; t(12;21); t(1;19); t(9;22); dic(9;20). MCL subtypes, C1/cMCL and C2/nnMCL. CLL subtypes, n-CLL/low programmed CLL, i-CLL/intermediate programmed CLL and m-CLL/high programmed CLL and DLBCL subtypes, ABC and GCB. Although an unbiased prediction can serve as an internal control, if trusty knowledge of the entity is avaialble, we recommend to specify it to the classifier algorithm. Please, note that the CpGs of the classifier are present in both Illumina 450k and EPIC arrays, and thus both platforms are supported. A first step to predict B-cell tumor content in the samples is available (strongly recommended), as the predictor assumes a minimum of 60% tumor cell content. Please, note that the tumor cell content prediction based on DNA methylation may not be accurate for some DLBCL and for MM cases, as we reported in [Duran-Ferrer 2020](https://www.nature.com/articles/s43018-020-00131-2). The strategy and accuracy of the classifier can be seen in the following figure:
 
 
-![](../Images/classifier.png)
+![](../images/classifier.png)
 
 # Load required data.
 
