@@ -44,7 +44,7 @@ library(data.table)
 
 ```{r}
 
-download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/Data/B.cell.tumor.classifier.RData", destfile = "B.cell.tumor.classifier.RData", method="libcurl")
+download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/data/B.cell.tumor.classifier.RData", destfile = "B.cell.tumor.classifier.RData", method="libcurl")
 load("B.cell.tumor.classifier.RData")
 
 ```

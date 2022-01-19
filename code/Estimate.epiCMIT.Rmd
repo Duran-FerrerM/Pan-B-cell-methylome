@@ -20,9 +20,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Introduction
-The epiCMIT (epigenetically-determined Cumulative MIToses) mitotic clock represents a relative measure of the total proliferative history of normal and neoplastic B cells. It is built considering the highest score from their two underlying hyper- and hypomethylation-based mitotic clocks, called epiCMIT-hyper and the epiCMIT-hypo, respectively. The code I provide here calculates the three mitotic clocks for each sample. All of them range from 0 to 1, depending on low or high relative proliferative history. Based on the data analyzed in the manuscript, considering hyper- or hypomethylation separately may not be sufficient to capture the entire mitotic history of cancer cells. A comprehensive selection of CpGs was performed to buid the epiCMIT and showed it as an accurate mitotic clock for normal and neoplastic B cells. Nonetheless, given the careful CpG filtering it is likely that epiCMIT represent a pan-cancer mitotic clock. As a final note, the proliferative history of B-cell tumors include the proliferative history of normal B-cell development and the proliferative history of malignant transformation and progression. The epiCMIT should be compared then among B-cell tumors with the same cellular origin. The current code supports several DNA methylation approaches, including 450k and EPIC Illumina arrays, and the next generation sequencing (NGS) approaches single (S) and paired end (PE) RRBS, ERRBS and WGBS. The original epiCMIT implementation for Illumina arrays was developed in [Duran-Ferrer M 2020](https://www.nature.com/articles/s43018-020-00131-2), whereas the strategy for NGS-based approaches was developed in  the CLL1100 study (Knisbacher, Lin, Hahn, Nadeu, Duran-Ferrer et al, Nat. Genet. 2022, accepted).
+The epiCMIT (epigenetically-determined Cumulative MIToses) mitotic clock represents a relative measure of the total proliferative history of normal and neoplastic B cells. It is built considering the highest score from their two underlying hyper- and hypomethylation-based mitotic clocks, called epiCMIT-hyper and the epiCMIT-hypo, respectively. The code I provide here calculates the three mitotic clocks for each sample. All of them range from 0 to 1, depending on low or high relative proliferative history. Based on the data analyzed in the manuscript, considering hyper- or hypomethylation separately may not be sufficient to capture the entire mitotic history of cancer cells. A comprehensive selection of CpGs was performed to build the epiCMIT. Nonetheless, given the careful CpG filtering it is likely that epiCMIT represent a pan-cancer mitotic clock. Please note that the proliferative history of B-cell tumors include the proliferative history of normal B-cell development and the proliferative history of malignant transformation and progression. The epiCMIT should be compared then among B-cell tumors with the same cellular origin! The current code supports several DNA methylation approaches, including 450k and EPIC Illumina arrays, and the next generation sequencing (NGS) approaches single (S) and paired end (PE) RRBS, ERRBS and WGBS. The original epiCMIT implementation for Illumina arrays was developed in [Duran-Ferrer M 2020](https://www.nature.com/articles/s43018-020-00131-2), whereas the strategy for NGS-based approaches was developed in  the CLL1100 study (*Knisbacher, Lin, Hahn, Nadeu, Duran-Ferrer et al, Nat. Genet. 2022, accepted*).
 
 ![](../images/epiCMIT.png)
+
+The epiCMIT mitotic clock, from Strati, P., Green, M.R. A, Nat Cancer, 2020.
 
 # Load required data.
 
@@ -41,9 +43,11 @@ library(data.table)
 
 ## Download and load required data into R.
 
+We will download the data from github. Make sure you have internet connection.
+
 ```{r}
 
-download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/Data/Estimate.epiCMIT.RData", destfile = "Estimate.epiCMIT.RData", method="libcurl")
+download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/data/Estimate.epiCMIT.RData", destfile = "Estimate.epiCMIT.RData", method="libcurl")
 load("Estimate.epiCMIT.RData")
 
 ## Take a look at RRBS data. Please, note that your data can be a matrix, data.frame or GRange object.
@@ -70,6 +74,8 @@ The methodology to estimate the epiCMIT is the following:
   *`export.results.name`: character string with the name for the exported file.
 
 ## 450k/EPIC Illumina array data.
+
+The [original epiCMIT](https://www.nature.com/articles/s43018-020-00131-2) estimation is calculated from 450k and EPIC DNA methylation data.
 
 ```{r}
 
@@ -109,6 +115,9 @@ fwrite(epiCMIT.Illumina.results,"epiCMIT.Illumina.arrays.scores.tsv",sep="\t")
 
 
 ## RRBS/NGS data.
+
+For NGS-based DNA methylaion data, a new strategy was developed in *Knisbacher, Lin, Hahn, Nadeu, Duran-Ferrer et al. Molecular map of chronic lymphocytic leukemia and its impact on outcome, Nat. Genet, 2022, accepted*. (new tutorial comming soon!)
+
 We can create a loop with the R function `lapply` and run both functions at the same time for all the samples to subsequently store all the results into a list. To do so, we can execute the following lines of code:
 
 ```{r}

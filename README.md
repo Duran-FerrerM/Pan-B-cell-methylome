@@ -4,7 +4,7 @@
 Multiple studies over the last decade analyzed the DNA methylome of normal and neoplasitc cells, but none of them studied a whole developmental cell lineage and derived neoplasms. Here, we report a systematic analysis of the DNA methylation variability in 1,595 samples of normal cell subpopulations and 14 tumor subtypes spanning the entire human B-cell lineage. Differential methylation among tumor entities relates to differences in cellular origin and to de novo epigenetic alterations, which allowed us to build an accurate machine learning-based diagnostic algorithm. We identify extensive patient-specific methylation variability in silenced chromatin associated with the proliferative history of normal and neoplastic B cells. Mitotic activity generally leaves both hyper- and hypomethylation imprints, but some B-cell neoplasms preferentially gain or lose DNA methylation. Subsequently, we construct a DNA methylation-based mitotic clock called epiCMIT, whose lapse magnitude represents a strong independent prognostic variable in B-cell tumors and is associated with particular driver genetic alterations. Our findings reveal DNA methylation as a holistic tracer of B-cell tumor developmental history, with implications in the differential diagnosis and prediction of clinical outcome. Here, I provide the diagnostic algorithm and the epiCMIT mitotic clock calculator.
 
 ## Graphical summary
-![](https://github.com/Duran-FerrerM/Pan-B-cell-methylome/blob/master/images/Graphical.abstract.png)
+![](images/Graphical.abstract.png)
 
 ## Citation
 If you use any data or code derived from this study, please cite:<br />
@@ -17,10 +17,15 @@ LICENSE terms can be found [here](https://github.com/Duran-FerrerM/Pan-B-cell-me
 
 ##  epiCMIT mitotic clock calculator
 
-A complete tutorial to estimate the epiCMIT mitotic clock score in DNA methylation data can be found [here](https://duran-ferrerm.github.io/Pan-B-cell-methylome/Estimate.epiCMIT.html).
+The current code supports 450k and EPIC Illumina arrays, as well as next generation sequencing (NGS) approaches, including single- and paired-end RRBS, ERRB and WGBS.
+
+[Complete tutorial to estimate the epiCMIT mitotic clock in DNA methylation data.](https://duran-ferrerm.github.io/Pan-B-cell-methylome/Estimate.epiCMIT.html).
 
 ## Pan B-cell tumor classifier algorithm
-A complete tutorial to estimate cellular composition for your 450k/EPIC DNA methylation data as well as to predict the main B-cell tumor entities and subtypes can be found [here](https://duran-ferrerm.github.io/Pan-B-cell-methylome/B.cell.tumor.classifier.html).
+
+The pan B-cell tumor classifier is able to classify ALL, MCL, CLL, DLBCL and MM and their main subtypes. In addition, a previous step checking the tumor cell contetn is applied.
+
+[Complete tutorial for the pan Bcell tumor classifier](https://duran-ferrerm.github.io/Pan-B-cell-methylome/B.cell.tumor.classifier.html).
 
 ## Data availability
 DNA methylation and gene expression data that support the findings of this study have been deposited at the European Genome-phenome Archive (EGA) under accession number [EGAS00001004640](https://ega-archive.org/studies/EGAS00001004640). <br />
