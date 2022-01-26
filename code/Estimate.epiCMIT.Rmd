@@ -64,14 +64,14 @@ The methodology to estimate the epiCMIT is the following:
   * `DNAm.genome.assembly`: The genome assembly of the DNAm matrix. Supported versions are "hg19" and "hg38".
   * `map.DNAm.to`: Map the data to Illumina-450k epiCMIT-CpGs or WGBS epiCMIT-CpGs. Should be "Illumina.450K.epiCMIT" or "WGBS.epiCMIT".
   * `min.epiCMIT.CpGs`: Integer, default 800 CpGs. Recommended a minimum of 800 epiCMIT-CpGs, less CpGs have not been thoroughly tested.
-  *`CpGs.as.DNAm.rownames`: logical, default TRUE. Are rownames of your matrix CpG names? If so they will be used for mapping. If FALSE, coordinates should be provided. If `DNAm` is of class matrix and `CpGs.as.DNAm.rownames=FALSE`, CpG coordinates and DNAm info columns from DNAm should be provided in the following arguments:`DNAm.chr`, `DNAm.start`, `DNAm.end`, `DNAm.meth`
+  * `CpGs.as.DNAm.rownames`: logical, default TRUE. Are rownames of your matrix CpG names? If so they will be used for mapping. If FALSE, coordinates should be provided. If `DNAm` is of class matrix and `CpGs.as.DNAm.rownames=FALSE`, CpG coordinates and DNAm info columns from DNAm should be provided in the following arguments:`DNAm.chr`, `DNAm.start`, `DNAm.end`, `DNAm.meth`
   
 2. Calculate the epiCMIT  after running `DNAm.to.epiCMIT` with the `epiCMIT`function, which contains the following arguments:
   * `DNAm.epiCMIT`:The GRange object after running `DNAm.to.epiCMIT` function.
   * `return.epiCMIT.annot`: logical indicating whether to export the epiCMIT-CpGs used and metadata info.
   * `export.results`: logical, indicating whether to export the results.
   * `export.results.dir`: character indicating the path to export the results.
-  *`export.results.name`: character string with the name for the exported file.
+  * `export.results.name`: character string with the name for the exported file.
 
 ## 450k/EPIC Illumina array data.
 
