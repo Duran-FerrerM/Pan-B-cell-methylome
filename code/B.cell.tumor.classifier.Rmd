@@ -80,8 +80,10 @@ Results <- Deconvolute.Bcell.tumor(data=example.betas,
                         )
 
 
-Results <- cbind(Results$Cellular.proportions,
-                 Results$combined.prediction)
+Results <- cbind(Results$Cellular.proportions, ## cellular comosition
+                 Results$combined.prediction, ## Combined prediction
+                 do.call(cbind,Results[grep("^Cellular.proportions$|^combined.prediction$",names(Results),invert = T)]) ## All probabilities for all predictors, including entity and subtypes
+                 )
 
 DT::datatable(Results, options = list(scrollX = T, scrollY=T), rownames = F)
 
