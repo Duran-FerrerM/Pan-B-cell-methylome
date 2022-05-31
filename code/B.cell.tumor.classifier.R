@@ -1,8 +1,8 @@
 ##
-## Pan B cell tumor classifier. v.2
+## Pan B cell tumor classifier. v.3
 ##
 
-# last update, 19/04/2021
+# last update, 31/04/2022
 
 options(max.print = 10000,stringsAsFactors = F,error=NULL)
 
