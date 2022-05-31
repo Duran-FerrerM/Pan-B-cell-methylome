@@ -4,7 +4,7 @@ author:
   - name: "Martí Duran-Ferrer, PhD"
     affiliation: "Institut d'Investigacions Biomèdiques Augusti Pi i Sunyer (IDIBAPS), Barcelona, Spain."
     email: "maduran@clinic.cat"
-date: "17/01/2022"
+date: "31/05/2022"
 output: 
     BiocStyle::html_document:
       toc: true
