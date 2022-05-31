@@ -2,7 +2,7 @@
 ## epiCMIT version v.2. Illumina 450k, EPIC and NGS supported.
 ##
 
-# last update 19/04/2021
+# last update 31/05/2021
 
 
 options(stringsAsFactors = F,error=NULL)
