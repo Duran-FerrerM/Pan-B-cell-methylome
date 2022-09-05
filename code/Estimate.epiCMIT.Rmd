@@ -4,7 +4,7 @@ author:
   - name: "Martí Duran-Ferrer, PhD"
     affiliation: "Institut d'Investigacions Biomèdiques Augusti Pi i Sunyer (IDIBAPS), Barcelona, Spain."
     email: "maduran@clinic.cat"
-date: "31/05/2022"
+date: "05/09/2022"
 output: 
     BiocStyle::html_document:
       toc: true
@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Introduction
-The epiCMIT (epigenetically-determined Cumulative MIToses) mitotic clock represents a relative measure of the total proliferative history of normal and neoplastic B cells. It is built considering the highest score from their two underlying hyper- and hypomethylation-based mitotic clocks, called epiCMIT-hyper and the epiCMIT-hypo, respectively. The code I provide here calculates the three mitotic clocks for each sample. All of them range from 0 to 1, depending on low or high relative proliferative history. Based on the data analyzed in the manuscript, considering hyper- or hypomethylation separately may not be sufficient to capture the entire mitotic history of cancer cells. A comprehensive selection of CpGs was performed to build the epiCMIT. Nonetheless, given the careful CpG filtering it is likely that epiCMIT represent a pan-cancer mitotic clock. Please note that the proliferative history of B-cell tumors include the proliferative history of normal B-cell development and the proliferative history of malignant transformation and progression. The epiCMIT should be compared then among B-cell tumors with the same cellular origin! The current code supports several DNA methylation approaches, including 450k and EPIC Illumina arrays, and the next generation sequencing (NGS) approaches single (S) and paired end (PE) RRBS, ERRBS and WGBS. The original epiCMIT implementation for Illumina arrays was developed in [Duran-Ferrer M 2020](https://www.nature.com/articles/s43018-020-00131-2), whereas the strategy for NGS-based approaches was developed in  the CLL1100 study (*Knisbacher, Lin, Hahn, Nadeu, Duran-Ferrer et al, 2022, accepted*).
+The epiCMIT (epigenetically-determined Cumulative MIToses) mitotic clock represents a relative measure of the total proliferative history of normal and neoplastic B cells. It is built considering the highest score from their two underlying hyper- and hypomethylation-based mitotic clocks, called epiCMIT-hyper and the epiCMIT-hypo, respectively. The code I provide here calculates the three mitotic clocks for each sample. All of them range from 0 to 1, depending on low or high relative proliferative history. Based on the data analyzed in the manuscript, considering hyper- or hypomethylation separately may not be sufficient to capture the entire mitotic history of cancer cells. A comprehensive selection of CpGs was performed to build the epiCMIT. Nonetheless, given the careful CpG filtering it is likely that epiCMIT represent a pan-cancer mitotic clock. Please note that the proliferative history of B-cell tumors include the proliferative history of normal B-cell development and the proliferative history of malignant transformation and progression. The epiCMIT should be compared then among B-cell tumors with the same cellular origin! The current code supports several DNA methylation approaches, including 450k and EPIC Illumina arrays, and the next generation sequencing (NGS) approaches single (S) and paired end (PE) RRBS, ERRBS and WGBS. The original epiCMIT implementation for Illumina arrays was developed in [Duran-Ferrer M 2020](https://www.nature.com/articles/s43018-020-00131-2), whereas the strategy for NGS-based approaches was developed in  the CLL-map study [Knisbacher, Lin, Hahn, Nadeu, Duran-Ferrer, 2022](https://www.nature.com/articles/s41588-022-01140-w).
 
 ![](../images/epiCMIT.png)
 
@@ -116,7 +116,7 @@ fwrite(epiCMIT.Illumina.results,"epiCMIT.Illumina.arrays.scores.tsv",sep="\t")
 
 ## RRBS/NGS data.
 
-For NGS-based DNA methylaion data, a new strategy was developed in *Knisbacher, Lin, Hahn, Nadeu, Duran-Ferrer et al. Molecular map of chronic lymphocytic leukemia and its impact on outcome, 2022, accepted*. (new tutorial comming soon!). Briefly, an extended epiCMIT-CpG catalogue was found using Whole Genome Bisulphite data and is systematically searched in each sample separately, irrespective of CpG numbers and identity. All epiCMIT-CpG set behaves very similar and thus can be applied.
+For NGS-based DNA methylaion data, a new strategy was developed in the [CLL-map study](https://www.nature.com/articles/s41588-022-01140-w). Briefly, an extended epiCMIT-CpG catalogue was found using Whole Genome Bisulphite data and is systematically searched in each sample separately, irrespective of CpG numbers and identity. All epiCMIT-CpG set behaves very similar and thus can be applied. You can check a more detailed tutorial [here](https://github.com/Duran-FerrerM/CLLmap-epigenetics).
 
 To estimate the epiCMIT in all samples, we can then create a loop with the R function `lapply` and run both functions at the same time for all the samples to subsequently store all the results into a list. To do so, we can execute the following lines of code:
 
