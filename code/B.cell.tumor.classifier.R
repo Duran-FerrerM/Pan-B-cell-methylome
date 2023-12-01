@@ -12,7 +12,7 @@ options(max.print = 10000,stringsAsFactors = F,error=NULL)
 ##
 
 # download a file with the classifier, load it in R, and delete the file
-download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/B.cell.tumor.classifier.RData", destfile = "B.cell.tumor.classifier.RData", method="libcurl")
+download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/data/B.cell.tumor.classifier.RData", destfile = "B.cell.tumor.classifier.RData", method="libcurl")
 load("B.cell.tumor.classifier.RData")
 
 

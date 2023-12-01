@@ -15,7 +15,7 @@ library(data.table)
 ## Although not mandatory, minimum knowledge of R and GenomicRanges package is expected to run these lines. Please, contact me if you need help! ;-)
 
 ##load necessary info
-download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/Estimate.epiCMIT.RData", destfile = "Estimate.epiCMIT.RData", method="libcurl")
+download.file("https://github.com/Duran-FerrerM/Pan-B-cell-methylome/raw/master/data/Estimate.epiCMIT.RData", destfile = "Estimate.epiCMIT.RData", method="libcurl")
 load("Estimate.epiCMIT.RData")
 
 ##
